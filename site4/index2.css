@@ -1,0 +1,109 @@
+
+
+div.item{
+	height: 450px;
+	width: 300px;
+
+	background: rgba(200, 200, 200, 1);
+	
+	position: relative;
+
+	overflow: hidden;
+
+	z-index: 1;
+}
+
+div.img{
+	height: 300px;
+	width: 270px;
+
+	background: url(https://ua.all.biz/img/ua/catalog/2871916.jpeg);
+	background-position: center !important;
+	background-size: cover !important;
+
+	position: absolute;
+
+	left: 15px;
+	top: 15px;
+
+	z-index: 3;
+	transition-duration: 0.6s;
+}
+
+
+h1.item{
+	width: 90%;
+	position: absolute;
+	left: -120%;
+	top: 180px;
+
+	color: rgba(200, 200, 200, 1);
+	font-size: 24px;
+
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+	z-index: 3;
+}
+
+p.item{
+	width: 90%;
+	position: absolute;
+	left: 120%;
+	top: 220px;
+
+	color: rgba(125, 125, 125, 1);
+	font-size: 20px;
+
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+	z-index: 3;
+}
+
+
+div.button{
+	position: absolute;
+	bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+
+	height: 50px;
+	width: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: rgba(128, 0, 0, 1);
+	color: rgba(200, 200, 200, 1);
+
+	font-size: 18px;
+
+	z-index: 2;
+
+	transition-duration: 0.6s;
+}
+
+div.item:hover div.img{
+	height: 150px;
+}
+
+div.item:hover div.button{
+	height: 450px;
+	width: 300px;
+
+	bottom: 0px;
+}
+
+div.item:hover p.button{
+	display: none;
+}
+
+div.item:hover h1.item{
+	left: 5%;
+}
+
+div.item:hover p.item{
+	left: 5%;
+}
